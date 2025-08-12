@@ -21,6 +21,7 @@
 		"@fontsource/fira-mono": "^5.0.0",
 		"@lucide/svelte": "^0.539.0",
 		"@neoconfetti/svelte": "^2.0.0",
+		"@sveltejs/adapter-auto": "^6.1.0",
 		"@sveltejs/adapter-vercel": "^5.6.3",
 		"@sveltejs/kit": "^2.22.0",
 		"@sveltejs/vite-plugin-svelte": "^6.0.0",

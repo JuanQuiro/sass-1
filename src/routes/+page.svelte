@@ -123,7 +123,7 @@
     {
       name: "Ana Rodríguez",
       business: "Spa Relax - Maracaibo",
-      image: "/placeholder-w1f41.png",
+      image: "/luxury-salon-interior.png",
       rating: 5,
       testimonial:
         "Los pagos en bolívares y dólares me permitieron estabilizar mis ingresos completamente. El marketplace me trajo muchos clientes nuevos.",
@@ -447,19 +447,19 @@
           <h4 class="font-semibold mb-4">Producto</h4>
           <ul class="space-y-2 text-gray-400">
             <li><a href="#features" class="hover:text-white transition-colors">Características</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Marketplace Venezuela</a></li>
+            <li><a href="/" class="hover:text-white transition-colors">Marketplace Venezuela</a></li>
             <li><a href="#precios" class="hover:text-white transition-colors">Precios</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Demo</a></li>
+            <li><a href="/" class="hover:text-white transition-colors">Demo</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="font-semibold mb-4">Soporte</h4>
           <ul class="space-y-2 text-gray-400">
-            <li><a href="#" class="hover:text-white transition-colors">Centro de Ayuda</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">WhatsApp Soporte</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Contacto</a></li>
-            <li><a href="#" class="hover:text-white transition-colors">Términos</a></li>
+            <li><a href="/" class="hover:text-white transition-colors">Centro de Ayuda</a></li>
+            <li><a href="/" class="hover:text-white transition-colors">WhatsApp Soporte</a></li>
+            <li><a href="/" class="hover:text-white transition-colors">Contacto</a></li>
+            <li><a href="/" class="hover:text-white transition-colors">Términos</a></li>
           </ul>
         </div>
       </div>
