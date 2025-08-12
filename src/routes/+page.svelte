@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import { Button } from '$lib/components/ui/button/index.js';
   import { Badge } from '$lib/components/ui/badge/index.js';
   import * as Card from '$lib/components/ui/card/index.js';
@@ -20,6 +21,18 @@
   function closeMenu() {
     isMenuOpen = false;
   }
+
+  // WhatsApp share URL (built on client)
+  let whatsappShareUrl = '';
+  onMount(() => {
+    try {
+      const title = 'Estética Pro - Impulsa tu salón al siguiente nivel';
+      const desc = 'Gestión, reservas y marketing en una sola plataforma para salones de belleza en Venezuela';
+      const page = typeof location !== 'undefined' ? location.href : '';
+      const text = `${title} — ${desc} ${page}`;
+      whatsappShareUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
+    } catch {}
+  });
 
   // Features data
   const features = [
@@ -421,6 +434,9 @@
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <Button size="lg" class="bg-white text-[#C9A76F] hover:bg-gray-100 px-8 py-4 text-lg font-semibold">Comenzar Gratis Ahora</Button>
         <Button size="lg" variant="outline" class="border-white text-white hover:bg-white hover:text-[#C9A76F] px-8 py-4 text-lg bg-transparent">Agendar Demo Personalizada</Button>
+        <a href={whatsappShareUrl} target="_blank" rel="noopener noreferrer" class="inline-block">
+          <Button size="lg" class="bg-[#25D366] hover:bg-[#1ebe57] text-white px-8 py-4 text-lg font-semibold">Compartir por WhatsApp</Button>
+        </a>
       </div>
       <p class="text-white/80 text-sm mt-6">🇻🇪 Sin tarjeta de crédito • Configuración en 5 minutos • Soporte en español • Pagos en Bs y USD</p>
     </div>

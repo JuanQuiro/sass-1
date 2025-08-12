@@ -4,9 +4,76 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+        <!-- Canonical URL: actual domain to be set when available -->
+        <!-- <link rel="canonical" href="https://tu-dominio.com/" /> -->
         <title>Estética Pro - Impulsa tu salón al siguiente nivel</title>
         <meta name="description" content="Gestión, reservas y marketing en una sola plataforma para salones de belleza, spas y barberías en Venezuela" />
         <meta name="generator" content="v0.dev" />
+        <!-- Open Graph (Facebook/WhatsApp) -->
+        <meta property="og:title" content="Estética Pro - Impulsa tu salón al siguiente nivel" />
+        <meta property="og:description" content="Gestión, reservas y marketing en una sola plataforma para salones de belleza, spas y barberías en Venezuela" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="es_VE" />
+        <meta property="og:site_name" content="Estética Pro" />
+        <!-- Tip: establece og:url a tu dominio final cuando lo tengas -->
+        <!-- <meta property= "og:url" content="https://tu-dominio.com/" /> -->
+        <meta property="og:image" content="/luxury-salon-interior.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="Software para salones de belleza: tablero y reservas" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <!-- Fallback OG images -->
+        <meta property="og:image" content="/modern-beauty-salon.png" />
+        <meta property="og:image" content="/professional-salon-owner.png" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Estética Pro - Impulsa tu salón al siguiente nivel" />
+        <meta name="twitter:description" content="Gestión, reservas y marketing en una sola plataforma para salones de belleza, spas y barberías en Venezuela" />
+        <meta name="twitter:image" content="/luxury-salon-interior.png" />
+        <meta name="twitter:image:alt" content="Software para salones de belleza: tablero y reservas" />
+
+        <!-- Misc -->
+        <meta name="theme-color" content="#C5A059" />
+        <meta name="robots" content="index, follow" />
+
+        <!-- JSON-LD: SoftwareApplication (SaaS) -->
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "Estética Pro",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web",
+              "inLanguage": "es-VE",
+              "areaServed": "VE",
+              "description": "Gestión, reservas y marketing en una sola plataforma para salones de belleza, spas y barberías en Venezuela.",
+              "image": "/luxury-salon-interior.png",
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "USD",
+                "price": "9",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "9",
+                  "priceCurrency": "USD",
+                  "billingDuration": "P1M"
+                }
+              }
+            }
+        </script>
+
+        <!-- JSON-LD: Organization -->
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Estética Pro",
+              "url": "https://tu-dominio.com/",
+              "logo": "/luxury-salon-interior.png",
+              "sameAs": []
+            }
+        </script>
         %sveltekit.head%
         <!-- Google Fonts: Playfair Display & Inter -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
