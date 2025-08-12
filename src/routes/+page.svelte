@@ -26,7 +26,7 @@
   let whatsappShareUrl = '';
   onMount(() => {
     try {
-      const title = 'Estética Pro - Impulsa tu salón al siguiente nivel';
+      const title = 'BellezaApp - Impulsa tu salón al siguiente nivel';
       const desc = 'Gestión, reservas y marketing en una sola plataforma para salones de belleza en Venezuela';
       const page = typeof location !== 'undefined' ? location.href : '';
       const text = `${title} — ${desc} ${page}`;
@@ -123,7 +123,7 @@
       image: "/professional-salon-owner.png",
       rating: 5,
       testimonial:
-        "Desde que uso Estética Pro, mis reservas aumentaron 40%. La plataforma es súper fácil de usar y mis clientes aman poder reservar online.",
+        "Desde que uso BellezaApp, mis reservas aumentaron 40%. La plataforma es súper fácil de usar y mis clientes aman poder reservar online.",
     },
     {
       name: "Carlos Mendoza",
@@ -204,7 +204,7 @@
           <div class="w-8 h-8 gradient-gold rounded-lg flex items-center justify-center">
             <Sparkles class="w-5 h-5 text-white" />
           </div>
-          <span class="font-serif text-xl font-bold text-gray-900">Estética Pro</span>
+          <span class="font-serif text-xl font-bold text-gray-900">BellezaApp</span>
         </div>
         <div class="hidden md:flex items-center space-x-8">
           <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors">Características</a>
@@ -451,12 +451,12 @@
             <div class="w-8 h-8 gradient-gold rounded-lg flex items-center justify-center">
               <Sparkles class="w-5 h-5 text-white" />
             </div>
-            <span class="font-serif text-xl font-bold">Estética Pro</span>
+            <span class="font-serif text-xl font-bold">BellezaApp</span>
           </div>
           <p class="text-gray-400 mb-4 max-w-md">
             La plataforma líder para salones de belleza, spas y barberías en Venezuela. Tu negocio de belleza, digital y en crecimiento.
           </p>
-          <div class="text-sm text-gray-500">&copy; {new Date().getFullYear()} Estética Pro. Todos los derechos reservados.</div>
+          <div class="text-sm text-gray-500">&copy; {new Date().getFullYear()} BellezaApp. Todos los derechos reservados.</div>
         </div>
 
         <div>

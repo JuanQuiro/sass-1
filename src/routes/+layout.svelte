@@ -5,9 +5,9 @@
 
     // Usa el dominio provisto para generar URLs absolutas en los meta OG/Twitter
     const siteUrl = 'https://sass-1-bellezas.vercel.app'.replace(/\/$/, '');
-    const title = 'Estética Pro - Impulsa tu salón al siguiente nivel';
+    const title = 'BellezaApp - Impulsa tu salón al siguiente nivel';
     const description = 'Gestión, reservas y marketing en una sola plataforma para salones de belleza, spas y barberías en Venezuela';
-    const ogImagePath = '/luxury-salon-interior.png';
+    const ogImagePath = '/luxury-salon-interior.png?v=20250812-1';
     const ogImage = `${siteUrl}${ogImagePath}`;
 </script>
 
@@ -28,7 +28,7 @@
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Estética Pro" />
+    <meta property="og:site_name" content="BellezaApp" />
     <meta property="og:locale" content="es_VE" />
     <meta property="og:url" content={siteUrl + '/'} />
     <meta property="og:image" content={ogImage} />
