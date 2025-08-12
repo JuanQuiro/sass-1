@@ -1,10 +1,10 @@
 <script lang="ts">
     import '../app.css';
-    import { PUBLIC_SITE_URL } from '$env/static/public';
 
     let { children } = $props();
 
-    const siteUrl = (PUBLIC_SITE_URL || 'http://localhost:5173').replace(/\/$/, '');
+    // Usa el dominio provisto para generar URLs absolutas en los meta OG/Twitter
+    const siteUrl = 'https://sass-1-bellezas.vercel.app'.replace(/\/$/, '');
     const title = 'Estética Pro - Impulsa tu salón al siguiente nivel';
     const description = 'Gestión, reservas y marketing en una sola plataforma para salones de belleza, spas y barberías en Venezuela';
     const ogImagePath = '/luxury-salon-interior.png';
