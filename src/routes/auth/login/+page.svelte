@@ -29,9 +29,20 @@
     return async ({ result }: { result: any }) => {
       console.info('[login enhance] result.type =', result?.type, 'result =', result);
       pending = false;
-      if (result?.type === 'success' || result?.type === 'redirect') {
+      if (result?.type === 'redirect') {
+        // Follow server-provided redirect immediately
+        const loc = (result as any).location as string | undefined;
+        if (loc) {
+          await goto(loc, { replaceState: true });
+        } else {
+          await goto('/app?welcome=1', { replaceState: true });
+        }
+        return;
+      }
+      if (result?.type === 'success') {
         localToast = { type: 'success', message: '¡Bienvenido!' };
         toasts.success('¡Bienvenido!');
+        await goto('/app?welcome=1', { replaceState: true });
       } else if (result?.type === 'failure') {
         localToast = { type: 'error', message: result.data?.error || 'No se pudo iniciar sesión' };
         // evitar toast global duplicado
