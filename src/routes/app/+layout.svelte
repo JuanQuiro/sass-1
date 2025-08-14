@@ -15,10 +15,12 @@
           <a href="/app/appointments" class="hover:text-gray-900">Citas</a>
           <a href="/app/service-staff" class="hover:text-gray-900">Asignaciones</a>
           <a href="/app/permissions" class="hover:text-gray-900">Permisos</a>
+          <a href="/app/profile" class="hover:text-gray-900">Perfil</a>
         </nav>
       </div>
       <div class="flex items-center gap-3 text-sm">
         <span class="hidden sm:inline text-gray-600">{data.perms?.length || 0} permisos</span>
+        <a href="/app/profile" class="px-3 py-1.5 rounded border hover:bg-gray-50">Perfil</a>
         <form method="POST" action="/auth/logout"><button class="px-3 py-1.5 rounded bg-gray-900 text-white">Salir</button></form>
       </div>
     </div>
