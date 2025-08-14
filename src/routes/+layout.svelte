@@ -1,5 +1,7 @@
 <script lang="ts">
     import '../app.css';
+    import Toaster from '$lib/components/Toaster.svelte';
+    import { navigating } from '$app/stores';
 
     let { children } = $props();
 
@@ -12,11 +14,18 @@
 </script>
 
 <div class="app">
+    <!-- Top progress bar on navigation -->
+    {#if $navigating}
+        <div class="fixed top-0 left-0 right-0 h-0.5 bg-gray-200 z-[1000]">
+            <div class="h-full bg-gray-900 animate-[progress_1.2s_ease_infinite]" style="width:60%"></div>
+        </div>
+    {/if}
 
 
     <main>
         {@render children()}
     </main>
+    <Toaster />
 </div>
 
 
@@ -48,3 +57,11 @@
     <!-- Icons -->
     <link rel="apple-touch-icon" href="/luxury-salon-interior.png" />
 </svelte:head>
+
+<style>
+  @keyframes progress {
+    0% { transform: translateX(-60%); }
+    50% { transform: translateX(-10%); }
+    100% { transform: translateX(40%); }
+  }
+</style>

@@ -1,26 +1,50 @@
+<script lang="ts">
+  import { Button } from '$lib/components/ui/button/index.js';
+  import { goto } from '$app/navigation';
+  function smartBack(event?: Event) {
+    try {
+      if (typeof document !== 'undefined' && typeof location !== 'undefined') {
+        const ref = document.referrer;
+        if (ref && new URL(ref).origin === location.origin) {
+          history.back();
+          return;
+        }
+      }
+    } catch {}
+    goto('/');
+  }
+  const whatsapp = 'https://wa.me/?text=' + encodeURIComponent('Hola BellezaApp, quiero más información.');
+</script>
+
 <svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
+  <title>Acerca de BellezaApp</title>
+  <meta name="description" content="Conoce BellezaApp: reservas sin comisiones, pagos locales, marketing y más." />
 </svelte:head>
 
-<div class="text-column">
-	<h1>About this app</h1>
-
-	<p>
-		This is a <a href="https://svelte.dev/docs/kit">SvelteKit</a> app. You can make your own by typing
-		the following into your command line and following the prompts:
-	</p>
-
-	<pre>npx sv create</pre>
-
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-
-	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
-	</p>
-</div>
+<section class="max-w-3xl mx-auto px-4 py-12">
+  <div class="mb-6">
+    <a href="/" on:click|preventDefault={smartBack} class="inline-block">
+      <Button class="cursor-pointer">⬅ Volver</Button>
+    </a>
+  </div>
+  <h1 class="font-serif text-3xl md:text-4xl font-bold mb-4">Sobre BellezaApp</h1>
+  <p class="text-gray-600 mb-4">
+    BellezaApp es la plataforma creada para salones de belleza, spas y barberías en Venezuela. Integra
+    reservas online sin comisiones, pagos locales (Pago Móvil, Bs, Zelle, USDT), marketing automatizado y
+    una presencia digital profesional en minutos.
+  </p>
+  <ul class="list-disc pl-6 space-y-2 text-gray-700 mb-6">
+    <li>Reservas web y WhatsApp 100% tuyas</li>
+    <li>Agenda, staff, clientes y servicios en un solo lugar</li>
+    <li>Campañas automáticas para recuperar clientes inactivos</li>
+    <li>Marketplace Estética Venezuela para ganar visibilidad</li>
+  </ul>
+  <div class="flex gap-3">
+    <a href={whatsapp} target="_blank" rel="noopener noreferrer" class="inline-block">
+      <Button class="cursor-pointer bg-[#25D366] hover:bg-[#1ebe57] text-white">Hablar por WhatsApp</Button>
+    </a>
+    <a href="/" class="inline-block">
+      <Button variant="outline" class="cursor-pointer">Ir al inicio</Button>
+    </a>
+  </div>
+</section>

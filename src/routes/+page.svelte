@@ -200,17 +200,22 @@
   <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
-        <div class="flex items-center space-x-2">
+        <a href="/" class="flex items-center space-x-2 cursor-pointer" aria-label="Ir al inicio">
           <div class="w-8 h-8 gradient-gold rounded-lg flex items-center justify-center">
             <Sparkles class="w-5 h-5 text-white" />
           </div>
           <span class="font-serif text-xl font-bold text-gray-900">BellezaApp</span>
-        </div>
+        </a>
         <div class="hidden md:flex items-center space-x-8">
           <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors">Características</a>
           <a href="#testimonios" class="text-gray-600 hover:text-gray-900 transition-colors">Testimonios</a>
           <a href="#precios" class="text-gray-600 hover:text-gray-900 transition-colors">Precios</a>
-          <Button variant="outline" class="border-[#C9A76F] text-[#C9A76F] hover:bg-[#C9A76F] hover:text-white bg-transparent">Iniciar Sesión</Button>
+          <a href="/auth/login" class="inline-block">
+            <Button variant="outline" class="cursor-pointer border-[#C9A76F] text-[#C9A76F] hover:bg-[#C9A76F] hover:text-white bg-transparent">Iniciar Sesión</Button>
+          </a>
+          <a href="/auth/register" class="inline-block">
+            <Button class="cursor-pointer gradient-gold text-white hover:opacity-90">Registrarse</Button>
+          </a>
         </div>
       </div>
     </div>
@@ -235,13 +240,17 @@
 		La única plataforma de belleza pensada para Venezuela: reservas sin comisiones, pagos locales y presencia digital profesional en minutos
 	  </p>
 	  <div class="flex flex-col sm:flex-row gap-4 justify-center">
-		<Button size="lg" class="gradient-gold hover:bg-[#B8956A] text-white px-8 py-4 text-lg font-semibold">
-		  Comenzar Gratis
-		</Button>
-		<Button size="lg" variant="outline" class="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg bg-transparent">
-		  Ver Demo
-		</Button>
-	  </div>
+        <a href="/auth/login" class="inline-block" aria-label="Comenzar gratis">
+          <Button size="lg" class="cursor-pointer gradient-gold hover:bg-[#B8956A] text-white px-8 py-4 text-lg font-semibold">
+            Comenzar Gratis
+          </Button>
+        </a>
+        <a href="/demo" class="inline-block" aria-label="Ver demo">
+          <Button size="lg" variant="outline" class="cursor-pointer border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg bg-transparent">
+            Ver Demo
+          </Button>
+        </a>
+      </div>
 	  <p class="text-white/80 text-sm mt-6">
 		✨ Sin tarjeta de crédito • Configuración en 5 minutos • Soporte en español
 	  </p>
@@ -432,8 +441,12 @@
         marketing, pagos locales y presencia digital en una sola herramienta, sin comisiones.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <Button size="lg" class="bg-white text-[#C9A76F] hover:bg-gray-100 px-8 py-4 text-lg font-semibold">Comenzar Gratis Ahora</Button>
-        <Button size="lg" variant="outline" class="border-white text-white hover:bg-white hover:text-[#C9A76F] px-8 py-4 text-lg bg-transparent">Agendar Demo Personalizada</Button>
+        <a href="/auth/login" class="inline-block" aria-label="Comenzar gratis ahora">
+          <Button size="lg" class="cursor-pointer bg-white text-[#C9A76F] hover:bg-gray-100 px-8 py-4 text-lg font-semibold">Comenzar Gratis Ahora</Button>
+        </a>
+        <a href="/demo" class="inline-block" aria-label="Agendar demo personalizada">
+          <Button size="lg" variant="outline" class="cursor-pointer border-white text-white hover:bg-white hover:text-[#C9A76F] px-8 py-4 text-lg bg-transparent">Agendar Demo Personalizada</Button>
+        </a>
         <a href={whatsappShareUrl} target="_blank" rel="noopener noreferrer" class="inline-block">
           <Button size="lg" class="bg-[#25D366] hover:bg-[#1ebe57] text-white px-8 py-4 text-lg font-semibold">Compartir por WhatsApp</Button>
         </a>
@@ -463,19 +476,19 @@
           <h4 class="font-semibold mb-4">Producto</h4>
           <ul class="space-y-2 text-gray-400">
             <li><a href="#features" class="hover:text-white transition-colors">Características</a></li>
-            <li><a href="/" class="hover:text-white transition-colors">Marketplace Venezuela</a></li>
+            <li><a href="/marketplace" class="hover:text-white transition-colors">Marketplace Venezuela</a></li>
             <li><a href="#precios" class="hover:text-white transition-colors">Precios</a></li>
-            <li><a href="/" class="hover:text-white transition-colors">Demo</a></li>
+            <li><a href="/demo" class="hover:text-white transition-colors">Demo</a></li>
           </ul>
         </div>
 
         <div>
           <h4 class="font-semibold mb-4">Soporte</h4>
           <ul class="space-y-2 text-gray-400">
-            <li><a href="/" class="hover:text-white transition-colors">Centro de Ayuda</a></li>
-            <li><a href="/" class="hover:text-white transition-colors">WhatsApp Soporte</a></li>
-            <li><a href="/" class="hover:text-white transition-colors">Contacto</a></li>
-            <li><a href="/" class="hover:text-white transition-colors">Términos</a></li>
+            <li><a href="/help" class="hover:text-white transition-colors">Centro de Ayuda</a></li>
+            <li><a href="https://wa.me/message/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">WhatsApp Soporte</a></li>
+            <li><a href="mailto:hola@belleza.app" class="hover:text-white transition-colors">Contacto</a></li>
+            <li><a href="/terms" class="hover:text-white transition-colors">Términos</a></li>
           </ul>
         </div>
       </div>
