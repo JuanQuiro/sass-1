@@ -54,7 +54,7 @@
   };
 </script>
 
-<div class="min-h-screen bg-gradient-to-br from-rose-50 via-white to-amber-50 flex relative overflow-hidden">
+<div class="min-h-screen bg-gradient-to-br from-rose-50 via-white to-amber-50 flex relative overflow-hidden px-4 sm:px-0">
   <!-- Animated SVG Background Pattern -->
   <div class="absolute inset-0 opacity-5 pointer-events-none">
     <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +128,7 @@
   </div>
 
   <!-- Right Side - Login Form (appears left on lg via order) -->
-  <div class="w-full lg:w-1/2 lg:order-1 flex items-center justify-center p-6 lg:p-12 relative">
+  <div class="w-full lg:w-1/2 lg:order-1 flex items-center justify-center p-4 sm:p-6 lg:p-12 relative">
     <div class="w-full max-w-md space-y-8 relative z-10">
       <!-- Header -->
       <div class="text-center space-y-4">
@@ -137,10 +137,10 @@
           Volver al inicio
         </a>
         <div class="space-y-2 relative">
-          <h1 class="font-serif text-4xl font-bold bg-gradient-to-r from-gray-900 via-primary to-rose-600 bg-clip-text text-transparent relative">
-            Iniciar Sesión
-            <div class="absolute -inset-4 bg-gradient-to-r from-primary/10 to-rose-400/10 rounded-2xl blur-2xl opacity-50 animate-gentle-pulse -z-10"></div>
+          <h1 class="font-serif text-3xl sm:text-4xl font-bold bg-gradient-to-r from-gray-900 via-primary to-rose-600 bg-clip-text text-transparent">
+            Inicia sesión
           </h1>
+          <div class="absolute -inset-4 bg-gradient-to-r from-primary/10 to-rose-400/10 rounded-2xl blur-2xl opacity-50 animate-gentle-pulse -z-10"></div>
           <p class="text-gray-600 text-lg">Accede a tu mundo de belleza</p>
         </div>
       </div>
@@ -266,15 +266,14 @@
   </div>
 
   <!-- Floating WhatsApp Support -->
-  <div class="fixed bottom-8 right-8 z-50 group">
+  <div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 z-50 group">
     <div class="relative">
       <a href={supportUrl} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp soporte" title="WhatsApp soporte">
-        <Button size="lg" class="h-16 w-16 rounded-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-2xl hover:shadow-green-500/50 transition-all duration-500 transform hover:scale-125 hover:-translate-y-2 group relative overflow-hidden">
-          <MessageCircle class="w-8 h-8 text-white group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 relative z-10" />
-          <div class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <Button size="lg" class="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 rounded-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-2xl hover:shadow-green-500/50 transition-all duration-500 transform hover:scale-125 hover:-translate-y-2 group relative overflow-hidden">
+          <MessageCircle class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 relative z-10" />
         </Button>
       </a>
-      <div class="absolute -top-16 right-0 bg-gray-900 text-white px-4 py-2 rounded-xl text-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-xl">Soporte 24/7 ⚡
+      <div class="absolute -top-14 right-0 bg-gray-900 text-white px-3 py-1.5 rounded-xl text-sm sm:text-base whitespace-nowrap opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-xl">Soporte 24/7 ⚡
         <div class="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900"></div>
       </div>
       <div class="absolute inset-0 rounded-full border-4 border-green-400 animate-ping opacity-20"></div>

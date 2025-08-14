@@ -42,9 +42,9 @@
   <meta name="description" content="Regístrate en BellezaApp para gestionar tu salón en Venezuela." />
 </svelte:head>
 
-<div class="min-h-screen bg-gradient-to-br from-rose-50 via-white to-amber-50 flex relative overflow-hidden">
+<div class="min-h-screen bg-gradient-to-br from-rose-50 via-white to-amber-50 flex relative overflow-hidden px-4 sm:px-0">
   <!-- Left: Register Form -->
-  <div class="w-full lg:w-1/2 flex items-center justify-center p-6 lg:p-12 relative z-10">
+  <div class="w-full lg:w-1/2 flex items-center justify-center p-4 sm:p-6 lg:p-12 relative z-10">
     <div class="w-full max-w-md space-y-8">
       <!-- Header -->
       <div class="text-center space-y-4">
@@ -53,7 +53,7 @@
           Volver al inicio
         </a>
         <div class="space-y-2">
-          <h1 class="font-serif text-4xl font-bold bg-gradient-to-r from-gray-900 via-primary to-rose-600 bg-clip-text text-transparent">Crea tu cuenta</h1>
+          <h1 class="font-serif text-3xl sm:text-4xl font-bold bg-gradient-to-r from-gray-900 via-primary to-rose-600 bg-clip-text text-transparent">Crea tu cuenta</h1>
           <p class="text-gray-600 text-lg">Únete a la revolución digital de la belleza</p>
         </div>
       </div>
@@ -222,10 +222,10 @@
   </div>
 
   <!-- Floating WhatsApp -->
-  <div class="fixed bottom-8 right-8 z-50">
-    <a href={supportUrl} target="_blank" rel="noopener noreferrer">
-      <Button size="lg" class="h-14 w-14 rounded-full bg-gradient-to-r from-green-500 to-green-600 text-white shadow">
-        <MessageCircle class="w-7 h-7 text-white" />
+  <div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 z-50 group">
+    <a href={supportUrl} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp soporte" title="WhatsApp soporte">
+      <Button size="lg" class="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 rounded-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white shadow-2xl hover:shadow-green-500/50 transition-all duration-500 transform hover:scale-125 hover:-translate-y-2 group relative overflow-hidden">
+        <MessageCircle class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 relative z-10" />
       </Button>
     </a>
   </div>

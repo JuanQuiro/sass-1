@@ -6,7 +6,8 @@
   import {
     Sparkles, Shield, MapPin, CreditCard,
     Zap, MessageSquare, Smartphone, Wifi, Clock,
-    Users, TrendingUp, Star, Check, Scissors, Heart
+    Users, TrendingUp, Star, Check, Scissors, Heart,
+    Menu, X
   } from '@lucide/svelte';
 
   // Navigation state
@@ -217,7 +218,37 @@
             <Button class="cursor-pointer gradient-gold text-white hover:opacity-90">Registrarse</Button>
           </a>
         </div>
+        <!-- Mobile menu toggle -->
+        <button
+          class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#C9A76F]"
+          aria-controls="mobile-menu"
+          aria-expanded={isMenuOpen}
+          aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+          on:click={toggleMenu}
+        >
+          {#if isMenuOpen}
+            <X class="h-6 w-6" />
+          {:else}
+            <Menu class="h-6 w-6" />
+          {/if}
+        </button>
       </div>
+      {#if isMenuOpen}
+        <!-- Mobile menu panel -->
+        <div id="mobile-menu" class="md:hidden mt-2 border-t border-gray-100">
+          <div class="py-3 space-y-1">
+            <a href="#features" on:click={closeMenu} class="block px-2 py-2 text-gray-700 hover:bg-gray-50 rounded">Características</a>
+            <a href="#testimonios" on:click={closeMenu} class="block px-2 py-2 text-gray-700 hover:bg-gray-50 rounded">Testimonios</a>
+            <a href="#precios" on:click={closeMenu} class="block px-2 py-2 text-gray-700 hover:bg-gray-50 rounded">Precios</a>
+            <a href="/auth/login" on:click={closeMenu} class="block px-2 py-2">
+              <Button variant="outline" class="w-full cursor-pointer border-[#C9A76F] text-[#C9A76F] hover:bg-[#C9A76F] hover:text-white bg-transparent">Iniciar Sesión</Button>
+            </a>
+            <a href="/auth/register" on:click={closeMenu} class="block px-2 py-2">
+              <Button class="w-full cursor-pointer gradient-gold text-white hover:opacity-90">Registrarse</Button>
+            </a>
+          </div>
+        </div>
+      {/if}
     </div>
   </nav>
 

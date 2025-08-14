@@ -83,42 +83,39 @@
   </nav>
 
   <!-- Hero -->
-  <section class="pt-10 pb-12 sm:pt-16 sm:pb-16 lg:pt-20 lg:pb-20">
+  <section class="pt-8 pb-10 sm:pt-14 sm:pb-14 lg:pt-20 lg:pb-20">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <div class="inline-flex items-center px-4 py-2 rounded-full bg-amber-50 border border-amber-200 text-amber-700 mb-6">
         <Sparkles class="w-4 h-4 mr-2" /> Demo personalizada • Gratis • 15 min
         <TrendingUp class="w-4 h-4 ml-2" />
       </div>
-      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-4">
+      <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-4">
         Ve cómo tu salón puede crecer 40% en 30 días
       </h1>
-      <p class="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">Agenda una demo de 15 minutos y descubre cómo tener reservas sin comisiones, pagos venezolanos integrados y marketing automático.</p>
-
-      <div class="flex justify-center items-center gap-8 mt-8">
+      <p class="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">Agenda una demo de 15 minutos y descubre cómo tener reservas sin comisiones, pagos venezolanos integrados y marketing automático.</p>
+      <div class="mt-6 sm:mt-8 grid grid-cols-3 gap-4 sm:gap-8 max-w-md sm:max-w-none mx-auto">
         <div class="text-center">
-          <div class="text-3xl font-bold text-[#C9A76F]">+40%</div>
-          <div class="text-sm text-gray-600">Más reservas</div>
+          <div class="text-2xl sm:text-3xl font-bold text-[#C9A76F]">+40%</div>
+          <div class="text-xs sm:text-sm text-gray-600">Más reservas</div>
         </div>
-        <div class="w-px h-10 bg-gray-300" />
         <div class="text-center">
-          <div class="text-3xl font-bold text-green-600">0%</div>
-          <div class="text-sm text-gray-600">Comisiones</div>
+          <div class="text-2xl sm:text-3xl font-bold text-green-600">0%</div>
+          <div class="text-xs sm:text-sm text-gray-600">Comisiones</div>
         </div>
-        <div class="w-px h-10 bg-gray-300" />
         <div class="text-center">
-          <div class="text-3xl font-bold text-blue-600">15min</div>
-          <div class="text-sm text-gray-600">Demo</div>
+          <div class="text-2xl sm:text-3xl font-bold text-blue-600">15min</div>
+          <div class="text-xs sm:text-sm text-gray-600">Demo</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Main -->
-  <div class="max-w-7xl mx-auto px-4 pb-16 grid grid-cols-1 xl:grid-cols-5 gap-8 lg:gap-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 grid grid-cols-1 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-12">
     <!-- Left: benefits, impact, testimonial -->
-    <div class="xl:col-span-3 space-y-8">
+    <div class="lg:col-span-3 space-y-6 sm:space-y-8">
       <!-- What you'll see -->
-      <div class="bg-white border border-gray-100 rounded-2xl shadow p-6 sm:p-8">
+      <div class="bg-white border border-gray-100 rounded-2xl shadow p-5 sm:p-8">
         <div class="flex items-center mb-6">
           <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#C9A76F] to-[#D4B078] flex items-center justify-center mr-4">
             <Target class="w-6 h-6 text-white" />
@@ -128,7 +125,7 @@
             <p class="text-gray-600">Experiencia completa en 15 minutos</p>
           </div>
         </div>
-        <div class="grid gap-4">
+        <div class="grid gap-3 sm:gap-4">
           <div class="flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50">
             <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center"><Smartphone class="w-5 h-5"/></div>
             <div><h3 class="font-semibold text-gray-900">Tu web profesional en 5 minutos</h3><p class="text-gray-600">Crea tu sitio con galería, precios y reservas online.</p></div>
@@ -153,7 +150,7 @@
       </div>
 
       <!-- Impact -->
-      <div class="bg-gradient-to-br from-rose-50 via-white to-amber-50 border border-gray-100 rounded-2xl shadow p-6 sm:p-8">
+      <div class="bg-gradient-to-br from-rose-50 via-white to-amber-50 border border-gray-100 rounded-2xl shadow p-5 sm:p-8">
         <div class="flex items-center mb-6">
           <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#C9A76F] to-[#D4B078] flex items-center justify-center mr-4">
             <TrendingUp class="w-6 h-6 text-white" />
@@ -163,7 +160,7 @@
             <p class="text-gray-600">Resultados reales y medibles</p>
           </div>
         </div>
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
           <div class="text-center p-4 bg-white rounded-xl border border-gray-100">
             <div class="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center mx-auto mb-3"><Users class="w-6 h-6 text-green-600"/></div>
             <div class="text-2xl font-bold text-green-600">+40%</div>
@@ -206,10 +203,10 @@
     </div>
 
     <!-- Right: form -->
-    <div class="xl:col-span-2">
-      <div class="xl:sticky xl:top-24">
+    <div class="lg:col-span-2">
+      <div class="lg:sticky lg:top-24">
         <div class="bg-white border border-gray-100 rounded-2xl shadow-lg overflow-hidden">
-          <div class="p-6 sm:p-8">
+          <div class="p-5 sm:p-8">
             <div class="text-center mb-6">
               <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#C9A76F] to-[#D4B078] flex items-center justify-center mx-auto mb-4"><Calendar class="w-7 h-7 text-white"/></div>
               <h2 class="font-serif text-2xl font-bold text-gray-900">Agenda tu demo personalizada</h2>
@@ -225,8 +222,8 @@
               <div class="mb-6 rounded-lg border border-red-200 bg-red-50 text-red-800 p-4">{form.error}</div>
             {/if}
 
-            <form method="POST" use:enhance={onSubmit} class="space-y-5">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <form method="POST" use:enhance={onSubmit} class="space-y-4 sm:space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 <div>
                   <label for="name" class="block text-sm font-semibold text-gray-800 mb-1">Nombre completo *</label>
                   <input id="name" name="name" required class="w-full h-11 px-4 border-2 border-gray-200 rounded-md focus:border-[#C9A76F] focus:ring-[#C9A76F]" placeholder="Tu nombre" aria-invalid={form?.field==='name'} />
@@ -283,7 +280,7 @@
                 <textarea id="message" name="message" rows={4} class="w-full px-4 py-3 border-2 border-gray-200 rounded-md focus:border-[#C9A76F] focus:ring-[#C9A76F]" placeholder="¿Qué desafíos tienes actualmente?" />
               </div>
 
-              <Button type="submit" disabled={pending} class="w-full h-12 bg-gradient-to-r from-[#D4B078] to-[#C9A76F] text-white font-bold">
+              <Button type="submit" disabled={pending} class="w-full h-12 sm:h-12 bg-gradient-to-r from-[#D4B078] to-[#C9A76F] text-white font-bold">
                 <Calendar class="w-5 h-5 mr-2" /> Agendar Demo Gratis
               </Button>
 
@@ -295,7 +292,7 @@
               </div>
             </form>
 
-            <div class="mt-6 pt-6 border-t border-gray-200">
+            <div class="mt-5 sm:mt-6 pt-5 sm:pt-6 border-t border-gray-200">
               <div class="grid grid-cols-3 gap-4 text-center">
                 <div class="flex flex-col items-center">
                   <CheckCircle class="w-5 h-5 text-green-500 mb-1" />
@@ -318,7 +315,14 @@
   </div>
 
   <!-- Floating WhatsApp -->
-  <a href={supportUrl} target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center text-white shadow-2xl">
-    <MessageCircle class="w-7 h-7" />
+  <a
+    href={supportUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp soporte"
+    title="WhatsApp soporte"
+    class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 flex items-center justify-center text-white shadow-2xl hover:shadow-green-500/50 transition-all duration-500 transform hover:scale-125 hover:-translate-y-2"
+  >
+    <MessageCircle class="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
   </a>
 </div>
